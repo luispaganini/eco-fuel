@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EcoFuel</string>
+    <string name="etanol">Etanol</string>
+    <string name="gasolina">Gasolina</string>
+</resources>
