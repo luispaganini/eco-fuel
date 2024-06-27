@@ -7,6 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/ecofuel"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fuel_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="46dp"
@@ -15,14 +28,15 @@
         android:layout_marginTop="16dp"
         android:layout_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_fuel_etanol" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:srcCompat="@drawable/ic_fuel" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/fuel_etanol"
+        android:id="@+id/fuel_1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:expandedHintEnabled="true"
         app:hintAnimationEnabled="true"
@@ -30,13 +44,14 @@
         app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/valor_etanol"
+            android:id="@+id/valor_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Valor Etanol" />
+            android:hint="@string/valor_combustivel_1" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
@@ -44,12 +59,13 @@
         android:layout_width="46dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
+        android:importantForAccessibility="no"
         app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/fuel_etanol"
-        app:srcCompat="@drawable/ic_fuel_gasolina" />
+        app:layout_constraintTop_toBottomOf="@+id/fuel_1"
+        app:srcCompat="@drawable/ic_fuel" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/fuel_gasolina"
+        android:id="@+id/fuel_2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -57,13 +73,13 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/fuel_etanol">
+        app:layout_constraintTop_toBottomOf="@+id/fuel_1">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/valor_gasolina"
+            android:id="@+id/valor_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Valor Gasolina" />
+            android:hint="@string/valor_combustivel_2" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
@@ -71,23 +87,25 @@
         android:layout_width="46dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
+        android:importantForAccessibility="no"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/fuel_gasolina"
+        app:layout_constraintTop_toBottomOf="@+id/fuel_2"
         app:srcCompat="@drawable/ic_money" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/consumo_etanol"
+        android:id="@+id/consumo_1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="@+id/fuel_gasolina"
-        app:layout_constraintStart_toStartOf="@+id/fuel_gasolina"
+        app:layout_constraintEnd_toStartOf="@+id/comb1"
+        app:layout_constraintStart_toStartOf="@+id/fuel_2"
         app:layout_constraintTop_toTopOf="@+id/imageView4">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/cons_etanol"
+            android:id="@+id/cons_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Consumo Etanol" />
+            android:hint="@string/consumo_combustivel_1" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
@@ -96,23 +114,22 @@
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/consumo_etanol"
+        app:layout_constraintTop_toBottomOf="@+id/consumo_1"
         app:srcCompat="@drawable/ic_money" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/consumo_etanol"
+        app:layout_constraintEnd_toStartOf="@+id/comb2"
+        app:layout_constraintStart_toStartOf="@+id/consumo_1"
         app:layout_constraintTop_toTopOf="@+id/imageView3">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/cons_gasolina"
+            android:id="@+id/cons_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Consumo Gasolina" />
+            android:hint="@string/consumo_combustivel_2" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -121,7 +138,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Calcular"
+        android:text="@string/calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
@@ -131,7 +148,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Limpar"
+        android:text="@string/limpar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
@@ -143,5 +160,28 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_limpar" />
+
+    <Button
+        android:id="@+id/comb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Buscar"
+        app:layout_constraintBottom_toBottomOf="@+id/consumo_1"
+        app:layout_constraintEnd_toEndOf="@+id/fuel_2"
+        app:layout_constraintStart_toEndOf="@+id/consumo_1"
+        app:layout_constraintTop_toTopOf="@+id/consumo_1" />
+
+    <Button
+        android:id="@+id/comb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Buscar"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="@+id/comb1"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

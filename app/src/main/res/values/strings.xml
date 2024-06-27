@@ -2,4 +2,13 @@
     <string name="app_name">EcoFuel</string>
     <string name="etanol">Etanol</string>
     <string name="gasolina">Gasolina</string>
+    <string name="valor_combustivel_1">Valor Combustivel 1</string>
+    <string name="ecofuel">EcoFuel</string>
+    <string name="valor_combustivel_2">Valor Combustivel 2</string>
+    <string name="consumo_combustivel_1">Consumo 1</string>
+    <string name="consumo_combustivel_2">Consumo 2</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpar">Limpar</string>
+    <string name="combustivel_1">Combustivel 1</string>
+    <string name="combustivel_2">Combustivel 2</string>
 </resources>

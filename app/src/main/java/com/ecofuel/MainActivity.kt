@@ -24,27 +24,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun btButtonLimparOnClick() {
-        binding.valorGasolina.setText("")
-        binding.valorEtanol.setText("")
-        binding.consEtanol.setText("")
-        binding.consGasolina.setText("")
+        binding.valor2.setText("")
+        binding.valor1.setText("")
+        binding.cons1.setText("")
+        binding.cons2.setText("")
         binding.result.setText("")
-        binding.valorEtanol.requestFocus()
+        binding.valor1.requestFocus()
     }
 
     private fun btButtonCalcOnClick() {
-        val precoGasolina = binding.valorGasolina.text.toString().toDoubleOrNull() ?: return
-        val precoEtanol = binding.valorEtanol.text.toString().toDoubleOrNull() ?: return
-        val consGasolina = binding.consGasolina.text.toString().toDoubleOrNull() ?: return
-        val consEtanol = binding.consEtanol.text.toString().toDoubleOrNull() ?: return
+        val preco2 = binding.valor2.text.toString().toDoubleOrNull() ?: return
+        val preco1 = binding.valor1.text.toString().toDoubleOrNull() ?: return
+        val cons2 = binding.cons2.text.toString().toDoubleOrNull() ?: return
+        val cons1 = binding.cons1.text.toString().toDoubleOrNull() ?: return
 
-        val custoKmGasolina = precoGasolina / consGasolina
-        val custoKmEtanol = precoEtanol / consEtanol
+        val custoKm2 = preco2 / cons2
+        val custoKm1 = preco1 / cons1
 
-        if (custoKmGasolina < custoKmEtanol)
-            binding.result.text = getString(R.string.gasolina)
+        if (custoKm2 < custoKm1)
+            binding.result.text = getString(R.string.combustivel_2)
         else
-            binding.result.text = getString(R.string.etanol)
+            binding.result.text = getString(R.string.combustivel_1)
     }
 
 }
