@@ -5,7 +5,7 @@
     android:id="@+id/lvCombustiveis"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:entries="@string/combustiveis"
+    android:entries="@array/combustiveis"
     tools:context=".ListarCombustiveis">
 
 </ListView>

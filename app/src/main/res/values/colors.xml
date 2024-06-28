@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Light theme colors -->
+    <color name="eco_fuel_primary">#6200EE</color>
+    <color name="eco_fuel_primary_variant">#3700B3</color>
+    <color name="eco_fuel_on_primary">#FFFFFF</color>
+
+    <color name="eco_fuel_secondary">#03DAC6</color>
+    <color name="eco_fuel_secondary_variant">#018786</color>
+    <color name="eco_fuel_on_secondary">#000000</color>
+
+    <color name="eco_fuel_background">#FFFFFF</color>
+    <color name="eco_fuel_on_background">#000000</color>
+
+    <color name="eco_fuel_surface">#FFFFFF</color>
+    <color name="eco_fuel_on_surface">#000000</color>
+
+    <color name="eco_fuel_error">#B00020</color>
+    <color name="eco_fuel_on_error">#FFFFFF</color>
+
+    <color name="eco_fuel_icon_tint">#6200EE</color>
+
+    <!-- Dark theme colors -->
+    <color name="eco_fuel_primary_night">#BB86FC</color>
+    <color name="eco_fuel_primary_variant_night">#3700B3</color>
+    <color name="eco_fuel_on_primary_night">#000000</color>
+
+    <color name="eco_fuel_secondary_night">#03DAC6</color>
+    <color name="eco_fuel_secondary_variant_night">#03DAC6</color>
+    <color name="eco_fuel_on_secondary_night">#000000</color>
+
+    <color name="eco_fuel_background_night">#121212</color>
+    <color name="eco_fuel_on_background_night">#FFFFFF</color>
+
+    <color name="eco_fuel_surface_night">#121212</color>
+    <color name="eco_fuel_on_surface_night">#FFFFFF</color>
+
+    <color name="eco_fuel_error_night">#CF6679</color>
+    <color name="eco_fuel_on_error_night">#000000</color>
+
+    <color name="eco_fuel_icon_tint_night">#BB86FC</color>
+
 </resources>

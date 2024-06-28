@@ -29,7 +29,8 @@
         android:layout_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-        app:srcCompat="@drawable/ic_fuel" />
+        app:srcCompat="@drawable/ic_fuel"
+        app:tint="?attr/iconTint" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/fuel_1"
@@ -50,6 +51,7 @@
             android:id="@+id/valor_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="@string/valor_combustivel_1" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -62,7 +64,8 @@
         android:importantForAccessibility="no"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/fuel_1"
-        app:srcCompat="@drawable/ic_fuel" />
+        app:srcCompat="@drawable/ic_fuel"
+        app:tint="?attr/iconTint"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/fuel_2"
@@ -79,6 +82,7 @@
             android:id="@+id/valor_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="@string/valor_combustivel_2" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -90,7 +94,8 @@
         android:importantForAccessibility="no"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/fuel_2"
-        app:srcCompat="@drawable/ic_money" />
+        app:srcCompat="@drawable/ic_money"
+        app:tint="?attr/iconTint"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/consumo_1"
@@ -104,6 +109,7 @@
             android:id="@+id/cons_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="@string/consumo_combustivel_1" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -115,7 +121,8 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/consumo_1"
-        app:srcCompat="@drawable/ic_money" />
+        app:srcCompat="@drawable/ic_money"
+        app:tint="?attr/iconTint"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -129,6 +136,7 @@
             android:id="@+id/cons_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="@string/consumo_combustivel_2" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -166,7 +174,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Buscar"
+        android:text="@string/buscar"
         app:layout_constraintBottom_toBottomOf="@+id/consumo_1"
         app:layout_constraintEnd_toEndOf="@+id/fuel_2"
         app:layout_constraintStart_toEndOf="@+id/consumo_1"
@@ -177,7 +185,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Buscar"
+        android:text="@string/buscar"
         app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
         app:layout_constraintEnd_toEndOf="@+id/comb1"
         app:layout_constraintStart_toEndOf="@+id/textInputLayout"

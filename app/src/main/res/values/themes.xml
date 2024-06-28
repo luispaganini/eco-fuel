@@ -1,8 +1,29 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.EcoFuel" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/eco_fuel_primary</item>
+        <item name="colorPrimaryVariant">@color/eco_fuel_primary_variant</item>
+        <item name="colorOnPrimary">@color/eco_fuel_on_primary</item>
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/eco_fuel_secondary</item>
+        <item name="colorSecondaryVariant">@color/eco_fuel_secondary_variant</item>
+        <item name="colorOnSecondary">@color/eco_fuel_on_secondary</item>
+
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/eco_fuel_background</item>
+        <item name="colorOnBackground">@color/eco_fuel_on_background</item>
+
+        <!-- Surface colors -->
+        <item name="colorSurface">@color/eco_fuel_surface</item>
+        <item name="colorOnSurface">@color/eco_fuel_on_surface</item>
+
+        <!-- Error colors -->
+        <item name="colorError">@color/eco_fuel_error</item>
+        <item name="colorOnError">@color/eco_fuel_on_error</item>
+
+        <item name="iconTint">@color/eco_fuel_icon_tint</item>
     </style>
 
     <style name="Theme.EcoFuel" parent="Base.Theme.EcoFuel" />
